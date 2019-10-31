@@ -22,7 +22,7 @@ end
   # As such, there should be a new String for each inner array, or pair
 
 def find_greater_pair(src)
-  array = 0
+  array = []
   row_index = 0
   
   while row_index < src.count do
