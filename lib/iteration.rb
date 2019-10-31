@@ -22,19 +22,20 @@ end
   # As such, there should be a new String for each inner array, or pair
 
 def find_greater_pair(src)
+  array = 0
+  row_index = 0
   
-array = []
-row_index = 0
-
-while row_index < src.count do 
-  if src[row_index][0] > src[row_index][1]
-    array << src[row_index][0]
-  else 
-    array << src[row_index][1]
+  while row_index < src.count do
+    numbers = src[row_index]
+    if numbers[0] < numbers [1]
+      array << numbers[0]
+    else 
+      array << numbers[1]
+    end 
+    row_index +=1
   end 
-  row_index += 1
-end 
-array 
+  array 
+
 end 
  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
