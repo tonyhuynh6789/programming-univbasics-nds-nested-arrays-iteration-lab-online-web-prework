@@ -45,17 +45,12 @@ end
   
   
 def total_even_pairs(src)
- row_index = 0
- total = 0
- 
- while row_index < src.count do
-   if src[row_index][0] % 2 == 0 && src[row_index][1] % 2 == 0 
-     total += src[row_index][0]
-     total += src[row_index][1]
-    end 
-    row_index += 1
-  end 
-  total
+row = 0 
+total = 0
+while row < count.src do 
+  if src[row][0] % 2 == 0 && src[row][1] % 2 == 0
+    total += src[row][0]
+    total += src[row][1]
 end 
 
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
