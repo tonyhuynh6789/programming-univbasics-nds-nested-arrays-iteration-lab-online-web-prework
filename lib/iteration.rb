@@ -1,12 +1,12 @@
 #require "pry"
 #binding.pry
 def join_ingredients(src)
-
-row_index = 0
 array = []
+row_index = 0
 
 while row_index < src.count do
-  array << "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
+  items = src[row_index]
+  array << "I love #{items[0]} and #{items[1]} on my pizza"
 row_index += 1
 end 
 array
